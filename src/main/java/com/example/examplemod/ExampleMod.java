@@ -21,6 +21,7 @@ public class ExampleMod
     public static final Item itemPineapple = new ItemPineapple();
     public static final Item itemApplePen = new ItemApplePen();
     public static final Item itemPineapplePen = new ItemPineapplePen();
+    public static final Item itemPenPineappleApplePen = new ItemPenPineappleApplePen();
 
     @EventHandler
     public void init(FMLInitializationEvent event)
@@ -30,5 +31,6 @@ public class ExampleMod
         GameRegistry.registerItem(itemPineapple, "itemPineapple");
         GameRegistry.registerItem(itemApplePen, "itemApplePen");
         GameRegistry.registerItem(itemPineapplePen, "itemPineapplePen");
+        GameRegistry.registerItem(itemPenPineappleApplePen, "itemPenPineappleApplePen");
     }
 }
