@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import net.minecraft.item.Item;
 
 @Mod(modid = ExampleMod.MODID, version = ExampleMod.VERSION)
 public class ExampleMod
@@ -16,10 +17,12 @@ public class ExampleMod
     public static final int GUI_ID = 0;
 
     public static final Block blockPPAP = new BlockPPAP();
+    public static final Item itemPen = new ItemPen();
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         GameRegistry.registerBlock(blockPPAP, "blockPPAP");
+        GameRegistry.registerItem(itemPen, "itemPen");
     }
 }
