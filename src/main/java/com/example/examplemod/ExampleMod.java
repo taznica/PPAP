@@ -19,6 +19,7 @@ public class ExampleMod
     public static final Block blockPPAP = new BlockPPAP();
     public static final Item itemPen = new ItemPen();
     public static final Item itemPineapple = new ItemPineapple();
+    public static final Item itemApplePen = new ItemApplePen();
 
     @EventHandler
     public void init(FMLInitializationEvent event)
@@ -26,5 +27,6 @@ public class ExampleMod
         GameRegistry.registerBlock(blockPPAP, "blockPPAP");
         GameRegistry.registerItem(itemPen, "itemPen");
         GameRegistry.registerItem(itemPineapple, "itemPineapple");
+        GameRegistry.registerItem(itemApplePen, "itemApplePen");
     }
 }
