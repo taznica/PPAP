@@ -1,6 +1,7 @@
 package com.example.examplemod;
 
-import net.minecraft.init.Blocks;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -14,10 +15,11 @@ public class ExampleMod
     public static ExampleMod INSTANCE;
     public static final int GUI_ID = 0;
 
+    public static final Block blockPPAP = new BlockPPAP();
+
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-		// some example code
-        System.out.println("DIRT BLOCK >> "+Blocks.dirt.getUnlocalizedName());
+        GameRegistry.registerBlock(blockPPAP, "blockPPAP");
     }
 }
