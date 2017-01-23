@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import cpw.mods.fml.common.Mod;
@@ -32,5 +33,7 @@ public class ExampleMod
         GameRegistry.registerItem(itemApplePen, "itemApplePen");
         GameRegistry.registerItem(itemPineapplePen, "itemPineapplePen");
         GameRegistry.registerItem(itemPenPineappleApplePen, "itemPenPineappleApplePen");
+
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new PPAPGuiHandler());
     }
 }
